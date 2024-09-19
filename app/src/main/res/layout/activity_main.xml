@@ -10,56 +10,56 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/et_a"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
         android:layout_margin="20dp"
-        android:hint="Enter a "/>
+        android:hint="Enter username " />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/et_b"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
         android:layout_margin="20dp"
-        android:hint="Enter b "/>
+        android:hint="Enter password " />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/btn_add"
-            android:layout_margin="4dp"
-            android:text="+"/>
-        <Button
-            android:layout_width="wrap_content"
+            android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_sub"
             android:layout_margin="4dp"
-            android:text="-"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn_mult"
-            android:layout_margin="4dp"
-            android:text="*"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn_div"
-            android:layout_margin="4dp"
-            android:text="/"/>
+            android:text="Sign Up"
+            android:textSize="24sp" />
+
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:id="@+id/result_tv"
+        android:layout_margin="4dp"
         android:textSize="24sp"
-        android:layout_margin="20dp"
-        android:gravity="center"/>
+        android:text="View Users" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="326dp"
+        android:layout_gravity="bottom|left">
+
+        <TextView
+            android:id="@+id/result_tv"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_margin="20dp"
+            android:gravity="center|bottom"
+            android:textSize="24sp" />
+
+    </FrameLayout>
+
 
 </LinearLayout>
