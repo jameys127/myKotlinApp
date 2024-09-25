@@ -18,10 +18,10 @@ import retrofit2.Response
 
 class MainActivity : AppCompatActivity() , View.OnClickListener{
 
-    lateinit var btnAdd : Button
-    lateinit var btnView: Button
-    lateinit var etA : EditText
-    lateinit var etB : EditText
+    private lateinit var btnAdd : Button
+    private lateinit var btnView: Button
+    private lateinit var etA : EditText
+    private lateinit var etB : EditText
     lateinit var resultTv : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
